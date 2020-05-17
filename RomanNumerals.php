@@ -16,10 +16,7 @@ class RomanNumerals
         'IV' => 4,
         'I' => 1
     );
-    public function index()
-    {
-        echo "Hello World";
-    }
+
     public static function convert($roman, $arabic = 0)
     {
         foreach (self::NUMERALS as $key => $value) {
