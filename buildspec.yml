@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 phases:
   pre_build:
     commands:
@@ -7,5 +7,6 @@ phases:
     commands:
       - vendor/bin/phpunit tests
 artifacts:
+  type: zip
   files:
-    - deploy/**/*
+    - '**/*'
